@@ -1,0 +1,44 @@
+@import "../../../sass/styles.scss";
+
+.header {
+  padding: 2rem;
+  max-width: $desktop;
+  margin: 0 auto;
+  .logo {
+    width: 6.25rem;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .nav {
+    .nav-item {
+      font: $link;
+      overflow: hidden;
+      margin: 0 1rem;
+      a {
+        transition: 0.2s;
+        color: $secondary3;
+        &:hover {
+          color: $secondary1;
+          &:after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 100%;
+            background: $enphasis1;
+            animation: leftToRight 0.4s;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes leftToRight {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translate(initial);
+  }
+}

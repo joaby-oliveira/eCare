@@ -1,0 +1,22 @@
+.flex {
+  display: flex;
+  &.mainCenter {
+    justify-content: center;
+  }
+  &.mainBetween {
+    justify-content: space-between;
+  }
+  &.mainAround {
+    justify-content: space-around;
+  }
+
+  &.crossCenter {
+    align-items: center;
+  }
+  &.crossBetween {
+    align-items: space-between;
+  }
+  &.crossAround {
+    align-items: space-around;
+  }
+}
