@@ -1,0 +1,14 @@
+@import "../../../sass/styles.scss";
+
+.button {
+  font: $text;
+  padding: 1rem 2rem;
+  &-header {
+    border: 2px solid $enphasis1;
+    color: $enphasis1;
+    &:hover {
+      border: 2px solid $enphasis3;
+      color: $enphasis3;
+    }
+  }
+}
