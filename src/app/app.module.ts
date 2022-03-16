@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
+import { HeroComponent } from './pages/sections/hero/hero.component';
+import { TitleComponent } from './components/title/title.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     HeaderComponent,
-    ButtonComponent
+    ButtonComponent,
+    HeroComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule

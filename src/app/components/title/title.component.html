@@ -1,0 +1,7 @@
+<h1 class="title" *ngIf="h1; else h2">
+  {{ content }}
+</h1>
+
+<ng-template #h2>
+  <h2 class="title">{{ content }}</h2>
+</ng-template>

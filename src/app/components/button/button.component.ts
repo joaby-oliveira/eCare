@@ -6,16 +6,18 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent implements OnInit {
-  @Input() text!: string;
+  @Input() content!: string;
   @Input() link!: string;
   @Input() type!: string;
   header: boolean = false;
   auth: boolean = false;
+  cta: boolean = false;
 
   constructor() {}
 
   ngOnInit(): void {
     this.header = this.type == 'header';
     this.auth = this.type == 'auth';
+    this.cta = this.type == 'cta';
   }
 }

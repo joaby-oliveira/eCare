@@ -1,0 +1,15 @@
+@import "../../../sass/styles.scss";
+
+.title {
+  font: $display;
+  margin-bottom: 2rem;
+  &::after {
+    margin-top: 1rem;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: $secondary1;
+    opacity: 0.1;
+  }
+}

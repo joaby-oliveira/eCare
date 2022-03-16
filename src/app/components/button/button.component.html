@@ -1,9 +1,13 @@
 <a
-  *ngIf="header"
+  *ngIf="header; else otherButton"
   class="flex mainCenter crossCenter button button-header"
   href="{{ link }}"
 >
-  {{ text }}
+  {{ content }}
 </a>
 
-<button *ngIf="auth" class="button button-auth">{{ text }}</button>
+<ng-template #otherButton>
+  <button class="button" [ngClass]="auth ? 'button-auth' : 'button-cta'">
+    {{ content }}
+  </button>
+</ng-template>

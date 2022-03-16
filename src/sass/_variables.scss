@@ -1,11 +1,11 @@
 $desktop: 1280px;
 // Fonts
-$serifFont: "Merriweather";
-$displayFont: "Major Mono Display";
-$display: 400 3rem $displayFont, sans-serif;
-$title: 700 2.25rem $serifFont, serif;
-$link: 700 1rem $serifFont, serif;
-$text: 400 1rem $serifFont, serif;
+$serifFont: "Merriweather", serif;
+$displayFont: "Major Mono Display", sans-serif;
+$display: 400 3rem $displayFont;
+$title: 700 2.25rem $serifFont;
+$link: 700 1rem $serifFont;
+$text: 400 1rem $serifFont;
 
 // Colors
 $primary1: #f5c7de;

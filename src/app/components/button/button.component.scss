@@ -23,4 +23,13 @@
       color: $secondary3;
     }
   }
+  &-cta {
+    border: 2px solid $secondary1;
+    color: $secondary1;
+    margin-top: 1rem;
+    &:hover {
+      border: 2px solid $secondary3;
+      color: $secondary3;
+    }
+  }
 }
