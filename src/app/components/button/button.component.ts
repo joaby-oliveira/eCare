@@ -10,10 +10,12 @@ export class ButtonComponent implements OnInit {
   @Input() link!: string;
   @Input() type!: string;
   header: boolean = false;
+  auth: boolean = false;
 
   constructor() {}
 
   ngOnInit(): void {
     this.header = this.type == 'header';
+    this.auth = this.type == 'auth';
   }
 }

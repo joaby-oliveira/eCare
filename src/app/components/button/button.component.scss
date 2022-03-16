@@ -3,12 +3,24 @@
 .button {
   font: $text;
   padding: 1rem 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
   &-header {
     border: 2px solid $enphasis1;
     color: $enphasis1;
+    margin-left: 1rem;
     &:hover {
       border: 2px solid $enphasis3;
       color: $enphasis3;
+    }
+  }
+  &-auth {
+    color: $secondary1;
+    font-weight: 700;
+    text-decoration: underline;
+    &:hover {
+      color: $secondary3;
     }
   }
 }
