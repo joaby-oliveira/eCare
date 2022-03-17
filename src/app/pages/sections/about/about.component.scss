@@ -1,0 +1,13 @@
+.about {
+  padding: 8rem 2rem;
+  background: url("../../../../assets/about-photo.png") no-repeat;
+  background-size: cover;
+  .textContainer {
+    max-width: 40rem;
+    filter: invert(100%);
+    p,
+    .title {
+      text-align: center;
+    }
+  }
+}
