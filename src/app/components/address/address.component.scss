@@ -1,0 +1,12 @@
+@import "../../../sass/styles.scss";
+
+.address {
+  padding: 4rem;
+  address {
+    line-height: 200%;
+    letter-spacing: 2px;
+    padding-left: 2rem;
+    margin-left: 2rem;
+    border-left: 1px solid #00000020;
+  }
+}

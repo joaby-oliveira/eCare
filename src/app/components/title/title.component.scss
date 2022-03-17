@@ -3,6 +3,9 @@
 .title {
   font: $display;
   margin-bottom: 2rem;
+  &.center {
+    text-align: center;
+  }
   &::after {
     margin-top: 1rem;
     content: "";

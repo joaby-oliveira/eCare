@@ -3,5 +3,5 @@
 </h1>
 
 <ng-template #h2>
-  <h2 class="title">{{ content }}</h2>
+  <h2 class="title" [ngClass]="center ? 'center' : ''">{{ content }}</h2>
 </ng-template>
