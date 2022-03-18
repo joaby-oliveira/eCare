@@ -20,25 +20,9 @@
         transition: 0.2s;
         color: $secondary3;
         &:hover {
-          color: $secondary1;
-          &:after {
-            content: "";
-            display: block;
-            height: 2px;
-            width: 100%;
-            background: $enphasis1;
-            animation: leftToRight 0.4s;
-          }
+          @include animated-border-bottom($secondary3);
         }
       }
     }
-  }
-}
-@keyframes leftToRight {
-  from {
-    transform: translateX(-100px);
-  }
-  to {
-    transform: translate(initial);
   }
 }
