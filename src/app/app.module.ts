@@ -1,5 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+
+const maskConfig: Partial<IConfig> = {
+  validation: false,
+};
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './pages/landing/landing.component';
@@ -9,6 +15,8 @@ import { HeroComponent } from './pages/sections/hero/hero.component';
 import { TitleComponent } from './components/title/title.component';
 import { AboutComponent } from './pages/sections/about/about.component';
 import { AddressComponent } from './components/address/address.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +27,12 @@ import { AddressComponent } from './components/address/address.component';
     HeroComponent,
     TitleComponent,
     AboutComponent,
-    AddressComponent
+    AddressComponent,
+    ContactComponent,
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule, NgxMaskModule.forRoot(maskConfig)],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
