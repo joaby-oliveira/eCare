@@ -1,0 +1,22 @@
+<div class="contact flex column crossCenter">
+  <app-title content="entre em contato"></app-title>
+  <form class="flex column crossCenter" (ngSubmit)="onContact()">
+    <input type="text" name="name" placeholder="Nome" [(ngModel)]="name" />
+    <input
+      type="text"
+      max="11"
+      name="number"
+      placeholder="Numero"
+      [(ngModel)]="number"
+      mask="(00) 00000-0000"
+    />
+    <textarea
+      name="text"
+      name="text"
+      rows="10"
+      placeholder="Digite sua mensagem"
+      [(ngModel)]="text"
+    ></textarea>
+    <app-button content="ENTRAR EM CONTATO" type="cta"></app-button>
+  </form>
+</div>

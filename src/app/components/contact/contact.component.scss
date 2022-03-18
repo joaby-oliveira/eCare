@@ -1,0 +1,29 @@
+@import "../../../sass/styles.scss";
+
+.contact {
+  padding: 2rem;
+  form {
+    width: 25rem;
+    max-width: 100%;
+    input,
+    textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid $secondary3;
+      padding: 0.5rem 0;
+      font: 400 1rem/140% "Merriweather", sans-serif;
+      color: $secondary1;
+      &::placeholder {
+        font: 400 1rem/1rem "Merriweather", sans-serif;
+        color: $secondary3;
+        opacity: 0.8;
+      }
+      &:focus {
+        border-bottom: 2px solid $enphasis1;
+      }
+    }
+    textarea {
+      resize: none;
+    }
+  }
+}
