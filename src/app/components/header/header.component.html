@@ -2,13 +2,13 @@
   <a href="#"> <img class="logo" src="assets/eCare.svg" alt="eCare logo" /> </a>
   <div class="nav flex" [ngClass]="openMenu ? 'show' : ' '">
     <ul class="flex crossCenter">
-      <li class="nav-item">
+      <li (click)="onNavigate()" class="nav-item">
         <a href="#sobre">sobre</a>
       </li>
-      <li class="nav-item">
+      <li (click)="onNavigate()" class="nav-item">
         <a href="#endereco">localização</a>
       </li>
-      <li class="nav-item">
+      <li (click)="onNavigate()" class="nav-item">
         <a href="#contato">contato</a>
       </li>
     </ul>

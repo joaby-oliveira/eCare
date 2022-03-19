@@ -17,4 +17,8 @@ export class HeaderComponent implements OnInit {
     this.openMenu = !this.openMenu;
     console.log(this.openMenu);
   }
+
+  onNavigate() {
+    this.openMenu = false;
+  }
 }
