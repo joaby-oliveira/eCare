@@ -1,0 +1,13 @@
+@import "../../../sass/styles.scss";
+
+.footer {
+  background: $secondary1;
+  padding: 1rem 2rem;
+  width: 100%;
+  p {
+    font: $text;
+    color: $primary1;
+    text-align: center;
+    width: fit-content;
+  }
+}

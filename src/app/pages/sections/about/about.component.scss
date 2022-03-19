@@ -1,13 +1,20 @@
+@import "../../../../../src/sass/styles.scss";
 .about {
   padding: 8rem 2rem;
   background: url("../../../../assets/about-photo.png") no-repeat;
   background-size: cover;
   .textContainer {
     max-width: 40rem;
-    filter: invert(100%);
     p,
     .title {
       text-align: center;
+    }
+    h2 {
+      color: $primary2;
+    }
+    p {
+      color: $primary2;
+      opacity: 0.8;
     }
   }
 }

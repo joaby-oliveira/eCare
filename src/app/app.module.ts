@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
 
 const maskConfig: Partial<IConfig> = {
@@ -31,7 +32,12 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, FormsModule, NgxMaskModule.forRoot(maskConfig)],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule,
+    NgxMaskModule.forRoot(maskConfig),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

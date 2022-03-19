@@ -11,3 +11,28 @@
     }
   }
 }
+
+@media (max-width: 760px) {
+  .hero {
+    img {
+      width: 30%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column-reverse;
+    img {
+      width: 100%;
+    }
+    .textContainer {
+      * {
+        text-align: center;
+      }
+    }
+    .button {
+      width: 100%;
+    }
+  }
+}

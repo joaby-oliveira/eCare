@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   name: string = '';
-  number: string = '';
+  email: string = '';
   text: string = '';
 
   constructor() {}
@@ -15,7 +16,12 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {}
 
   onContact() {
-    if (this.name === '' || this.number === '' || this.text === '') {
+    if (this.name !== '' && this.email !== '' && this.text !== '') {
+      window.location.href = `
+        https://api.whatsapp.com/send?phone=5514999029409&text=Olá, me chamo ${this.name}. Email: ${this.email}
+        Mensagem: ${this.text}
+      `;
+    } else {
       alert('Preencha todos os dados');
       return;
     }

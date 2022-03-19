@@ -19,3 +19,9 @@ p {
     transform: scale(initial);
   }
 }
+
+@media (max-width: 760px) {
+  :root {
+    font-size: 70%;
+  }
+}

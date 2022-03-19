@@ -1,7 +1,7 @@
-<div class="address flex column crossCenter">
+<div id="endereco" class="address flex column crossCenter">
   <app-title align="center" content="encontre nosso salão"></app-title>
-  <div class="flex">
-    <div class="mapouter">
+  <div class="map-text flex">
+    <div *ngIf="!mobile; else mobileMap" class="mapouter">
       <div class="gmap_canvas">
         <iframe
           width="400"
@@ -13,24 +13,33 @@
           marginheight="0"
           marginwidth="0"
         ></iframe
-        ><a href="https://fmovies-online.net">fmovies</a><br /><style>
-          .mapouter {
-            position: relative;
-            text-align: right;
-            height: 550px;
-            width: 400px;
-          }</style
-        ><a href="https://www.embedgooglemap.net">google maps embedded</a
-        ><style>
-          .gmap_canvas {
-            overflow: hidden;
-            background: none !important;
-            height: 550px;
-            width: 400px;
-          }
-        </style>
+        ><a href="https://fmovies-online.net">fmovies</a><br />
+        ><a href="https://www.embedgooglemap.net">google maps embedded</a>
       </div>
     </div>
+    <ng-template #mobileMap>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            width="250"
+            height="400"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe
+          ><a
+            href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"
+            >divi discount</a
+          ><br />
+          <a href="https://www.embedgooglemap.net"
+            >google map location for website</a
+          >
+        </div>
+      </div>
+    </ng-template>
     <address>Rua Hygino Muzy Filho, <br />Mirante, <br />Marília - SP</address>
   </div>
 </div>

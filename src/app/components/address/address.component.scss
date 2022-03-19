@@ -9,4 +9,40 @@
     margin-left: 2rem;
     border-left: 1px solid #00000020;
   }
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 550px;
+    width: 400px;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 550px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 760px) {
+  .address {
+    .mapouter {
+      position: relative;
+      text-align: right;
+      height: 400px;
+      width: 250px;
+    }
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 400px;
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .map-text {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

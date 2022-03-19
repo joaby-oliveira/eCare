@@ -1,17 +1,27 @@
-<header class="header flex mainBetween crossCenter">
+<header id="hero" class="header flex mainBetween crossCenter">
   <a href="#"> <img class="logo" src="assets/eCare.svg" alt="eCare logo" /> </a>
-  <div class="flex">
-    <ul class="nav flex crossCenter">
+  <div class="nav flex" [ngClass]="openMenu ? 'show' : ' '">
+    <ul class="flex crossCenter">
       <li class="nav-item">
-        <a href="#">sobre</a>
+        <a href="#sobre">sobre</a>
       </li>
       <li class="nav-item">
-        <a href="#">localização</a>
+        <a href="#endereco">localização</a>
       </li>
       <li class="nav-item">
-        <a href="#">contato</a>
+        <a href="#contato">contato</a>
       </li>
     </ul>
-    <app-button content="AGENDAR" type="header"></app-button>
+    <div class="buttonContainer flex column">
+      <app-button content="AGENDAR" type="header"></app-button>
+      <app-button
+        content="FECHAR"
+        class="closeNav"
+        (click)="toggleMenu()"
+      ></app-button>
+    </div>
   </div>
+  <app-button content="ABRIR" class="closeNav" (click)="toggleMenu()"
+    >MENU</app-button
+  >
 </header>
